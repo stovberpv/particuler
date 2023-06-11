@@ -1,0 +1,9 @@
+full-trace: true
+inline-diffs: true
+extension: ['ts']
+spec:
+  - 'test/**/*.spec.ts'
+require: [
+  'ts-node/register',
+  'test/fixtures.js',
+]
