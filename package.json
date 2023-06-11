@@ -1,34 +1,34 @@
 {
   "name": "particuler",
   "version": "0.0.0",
+  "homepage": "https://github.com/stovberpv/particuler#readme",
   "description": "",
-  "scripts": {
-    "prebuild": "rimraf -g {dist/,types/}",
-    "build": "tsc --build tsconfig.json"
+  "author": {
+    "email": "pavel@stovber.ru",
+    "name": "Stovber Pavel"
   },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stovberpv/particuler.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stovberpv/particuler/issues"
+  },
+  "keywords": [
+    "moleculer",
+    "particuler"
+  ],
   "main": "dist/index",
   "types": "types/index",
   "files": [
     "dist",
     "types"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/antimoleculer/particuler.git"
+  "scripts": {
+    "prebuild": "rimraf -g {dist/,types/}",
+    "build": "tsc --build tsconfig.json"
   },
-  "keywords": [
-    "moleculer",
-    "particuler"
-  ],
-  "author": {
-    "email": "pavel@stovber.ru",
-    "name": "Stovber Pavel"
-  },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/antimoleculer/particuler/issues"
-  },
-  "homepage": "https://github.com/antimoleculer/particuler#readme",
   "dependencies": {
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.0",
