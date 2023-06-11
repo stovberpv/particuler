@@ -1,0 +1,53 @@
+env:
+  browser: false
+  commonjs: true
+  es2019: true
+extends:
+  - standard
+  - eslint:recommended
+  - plugin:@typescript-eslint/eslint-recommended
+  - plugin:@typescript-eslint/recommended
+  - plugin:@typescript-eslint/recommended-requiring-type-checking
+parser: "@typescript-eslint/parser"
+parserOptions:
+  ecmaVersion: 2019
+  project: ["./tsconfig.json"]
+plugins:
+  - "@typescript-eslint"
+rules:
+  {
+    no-multiple-empty-lines: ["error", { "max": 2, "maxEOF": 1, maxBOF: 0 }],
+    semi: ["error", "always"],
+    comma-dangle:
+      [
+        "error",
+        {
+          "arrays": "never",
+          "objects": "always-multiline",
+          "imports": "always-multiline",
+          "exports": "always-multiline",
+          "functions": "never",
+        },
+      ],
+    space-before-function-paren:
+      [
+        "error",
+        { "anonymous": "always", "named": "always", "asyncArrow": "always" },
+      ],
+    max-statements-per-line: ["error", { "max": 1 }],
+    max-len:
+      [
+        "error",
+        {
+          "code": 100,
+          "ignoreComments": true,
+          "ignoreTrailingComments": true,
+          "ignoreUrls": true,
+          "ignoreStrings": true,
+          "ignoreTemplateLiterals": true,
+          "ignoreRegExpLiterals": true
+        },
+      ],
+    "@typescript-eslint/no-explicit-any": ["error", { "ignoreRestArgs": true }],
+    # "@typescript-eslint/array-type": ["error", "array-simple"],
+  }

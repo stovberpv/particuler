@@ -1,0 +1,56 @@
+{
+  "name": "particuler",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {
+    "prebuild": "rimraf -g {dist/,types/}",
+    "build": "tsc --build tsconfig.json"
+  },
+  "main": "dist/index",
+  "types": "types/index",
+  "files": [
+    "dist",
+    "types"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antimoleculer/particuler.git"
+  },
+  "keywords": [
+    "moleculer",
+    "particuler"
+  ],
+  "author": {
+    "email": "pavel@stovber.ru",
+    "name": "Stovber Pavel"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/antimoleculer/particuler/issues"
+  },
+  "homepage": "https://github.com/antimoleculer/particuler#readme",
+  "dependencies": {
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.0",
+    "reflect-metadata": "^0.1.13",
+    "tslib": "^2.5.2",
+    "typedi": "^0.10.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.1",
+    "@typescript-eslint/eslint-plugin": "^5.59.7",
+    "@typescript-eslint/parser": "^5.59.7",
+    "eslint": "^8.41.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "jest": "^29.5.0",
+    "rimraf": "^5.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "peerDependencies": {
+    "moleculer": "^0.14.11"
+  }
+}

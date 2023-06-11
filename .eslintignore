@@ -1,0 +1,9 @@
+node_modules
+coverage
+dist
+scripts
+types
+test
+
+jest.config.ts
+package/**/*.spec.ts

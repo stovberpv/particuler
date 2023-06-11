@@ -1,0 +1,59 @@
+{
+  "include": ["package"],
+  "exclude": ["**/*.spec.ts"],
+  "compilerOptions": {
+    "ignoreDeprecations": "5.0",
+
+    "target": "ES2019",
+    "lib": ["ES2019"],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "useDefineForClassFields": true,
+
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "paths": {
+      "@package/*": ["package/*"]
+    },
+    "resolveJsonModule": true,
+
+    "allowJs": true,
+    "checkJs": true,
+
+    "declaration": true,
+    "outDir": "dist",
+    "removeComments": true,
+    "importHelpers": true,
+    "importsNotUsedAsValues": "error",
+    "downlevelIteration": true,
+    "newLine": "lf",
+    "noEmitOnError": true,
+    "preserveConstEnums": true,
+    "declarationDir": "types",
+
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": false,
+    "noImplicitThis": true,
+    "useUnknownInCatchVariables": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "exactOptionalPropertyTypes": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "allowUnreachableCode": false,
+
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true
+  }
+}
