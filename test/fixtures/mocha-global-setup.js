@@ -1,4 +1,5 @@
 require('ts-node').register({ project: "test/tsconfig.json" });
+require('tsconfig-paths').register();
 
 require('reflect-metadata');
 

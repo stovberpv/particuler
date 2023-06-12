@@ -9,6 +9,10 @@
     "module": "commonjs",
     "resolveJsonModule": true,
 
+    "paths": {
+      "@package/*": ["../package/*"]
+    },
+
     "noEmit": true,
   }
 }
