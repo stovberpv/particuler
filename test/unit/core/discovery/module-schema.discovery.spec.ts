@@ -8,8 +8,8 @@ import {
   Hook,
   HooksController,
   Module,
-} from '../../../package/common';
-import { ModuleSchemaDiscovery } from '../../../package/core/discovery';
+} from '@package/common';
+import { ModuleSchemaDiscovery } from '@package/core/discovery';
 
 describe('ModuleSchemaDiscovery', function () {
   describe('Checking with no controller passed', function () {
