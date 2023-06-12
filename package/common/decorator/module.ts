@@ -1,7 +1,3 @@
-/* eslint-disable @typescript-eslint/ban-types */
-/* eslint-disable func-style */
-/* eslint-disable @typescript-eslint/naming-convention */
-
 import { Service, type ServiceOptions } from 'typedi';
 
 import type { ModuleParams } from '../../type';
@@ -27,6 +23,7 @@ export const Module = (moduleParams: ModuleParams): ClassDecorator => {
 
   const makeInjectable = Service(globalUniqServiceConfig);
 
+  // eslint-disable-next-line @typescript-eslint/ban-types
   return <T extends Function> (target: T): T => {
     const isInjectable: unknown = Reflect.getMetadata(INJECTABLE, target);
     if (isInjectable) {

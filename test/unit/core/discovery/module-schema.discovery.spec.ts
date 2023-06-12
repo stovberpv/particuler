@@ -12,7 +12,7 @@ import {
 import { ModuleSchemaDiscovery } from '@package/core/discovery';
 
 describe('ModuleSchemaDiscovery', function () {
-  describe('Checking with no controller passed', function () {
+  describe('Testing if no controller passed', function () {
     it('should return the array with one element when one module provided', function () {
       @Module({})
       class TestModule { }
@@ -25,7 +25,7 @@ describe('ModuleSchemaDiscovery', function () {
   });
 
 
-  describe('Checking with empty controller passed', function () {
+  describe('Testing if empty controller passed', function () {
     it('should return empty moleculer service schema if no controllers provided', function () {
       @Module({})
       class TestModule { }
@@ -113,7 +113,7 @@ describe('ModuleSchemaDiscovery', function () {
   });
 
 
-  describe('Checking handlers registration', function () {
+  describe('Testing handlers registration', function () {
     it('should return actions with registered one handler', function () {
       @ActionsController()
       class TestActionsProvider {
@@ -174,7 +174,7 @@ describe('ModuleSchemaDiscovery', function () {
   });
 
 
-  describe('Checking handlers bounded context', function () {
+  describe('Testing handlers bounded context', function () {
     it('should return actions handler bounded to parent class', function () {
       @ActionsController()
       class TestActionsProvider {
