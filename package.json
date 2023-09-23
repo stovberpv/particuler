@@ -7,7 +7,7 @@
     "email": "pavel@stovber.ru",
     "name": "Stovber Pavel"
   },
-  "license": "SEE LICENCE IN LICENCE",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/stovberpv/particuler.git"
@@ -19,18 +19,18 @@
     "moleculer",
     "particuler"
   ],
+  "type": "commonjs",
   "main": "dist/index.js",
-  "types": "types/index.d.ts",
+  "types": "dist/index.d.ts",
   "files": [
+    "@types",
     "dist",
-    "types",
-    "src/@types/**/*.d.ts",
     "package.json",
     "README.md",
     "LICENSE"
   ],
   "scripts": {
-    "prebuild": "rimraf -g {dist/,types/}",
+    "prebuild": "rimraf dist",
     "build": "tsc --build tsconfig.build.json",
     "test": "mocha",
     "test:debug": "node --inspect node_modules/.bin/mocha"

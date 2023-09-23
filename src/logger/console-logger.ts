@@ -24,6 +24,7 @@ export class ConsoleLogger implements LoggerInterface {
    */
   info (message: string): void {
     this.#print(
+      // TODO: orange color
       `[${this.#now()}] INFO  ${this.nodeId}/PARTICULER: ${message}.`
     );
   }

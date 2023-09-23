@@ -17,7 +17,7 @@
     "resolveJsonModule": true,
     "typeRoots": [
       "node_modules/@types",
-      "src/@types"
+      "@types"
     ],
 
     "allowJs": true,
@@ -32,7 +32,6 @@
     "newLine": "lf",
     "noEmitOnError": true,
     "preserveConstEnums": true,
-    "declarationDir": "types",
 
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,

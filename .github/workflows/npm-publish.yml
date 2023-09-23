@@ -28,8 +28,10 @@ jobs:
 
       - name: set-version
         working-directory: .
+        env:
+          VERSION: ${{ github.event.release.tag_name }}
         run: |
-          sed -i -E "s/\"version\": \".+\"/\"version\": \"${GITHUB_REF_NAME:1}\"/g" package.json
+          sed -i -E "s/\"version\": \".+\"/\"version\": \"${VERSION:1}\"/g" package.json
 
       - name: publish
         run: |
