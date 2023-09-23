@@ -1,0 +1,18 @@
+{
+  "ts-node": {
+    "transpileOnly": true,
+  },
+  "compilerOptions": {
+    "target": "ES2019",
+    "experimentalDecorators": true,
+
+    "module": "commonjs",
+    "resolveJsonModule": true,
+
+    "paths": {
+      "@package/*": ["../src/*"]
+    },
+
+    "noEmit": true,
+  }
+}

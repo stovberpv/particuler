@@ -1,0 +1,10 @@
+full-trace: false
+inline-diffs: true
+extension: ['ts']
+spec:
+  - 'test/unit/**/*.spec.ts'
+  - 'test/e2e/**/*.spec.ts'
+require: [
+  'test/fixtures/mocha-global-setup.js',
+  'test/fixtures/mocha-global-teardown.js',
+]
